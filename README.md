@@ -2,7 +2,7 @@
 
 <!-- (This is a comment) INSTRUCTIONS: Go through this page and fill out any **bolded** entries with their correct values.-->
 
-# AND101 Project 1 - Hello, Squirrel!
+# AND101 Project 2 - Kotlin Debug-a-thon
 
 Submitted by: **Your Name Here**
 
@@ -10,7 +10,7 @@ Time spent: **X** hours spent in total
 
 ## Summary
 
-**Name of your app** is an android app that recreates the common "Hello, World!", to introduce ourselves to the neighborhood squirrel 🐿.  **Change or add to this description**
+**Name of your app** is an android app that was riddled with some pretty nasty Kotlin bugs.  With those gone, it's a collection of widgets for a variety of purposes!  **Change or add to this description**
 
 If I had to describe this project in three (3) emojis, they would be: **emojis here**
 
@@ -20,14 +20,16 @@ If I had to describe this project in three (3) emojis, they would be: **emojis h
 
 The following REQUIRED features are completed:
 
-- [ ] Change profile name to your name
-- [ ] Change profile bio text to a personal bio about yourself
-- [ ] Modify hobby section to include your top three (3) hobbies
+- [ ] 👋 Debug and fix navigation to Hello World activity
+- [ ] 4️⃣ Debug and fix Number Sum (2 + 2) activity
+- [ ] 📅 Debug and fix Current Day activity 
+- [ ] 🌈 Debug and fix behavior of Random Color activity
+- [ ] 🗒️ Debug and fix Print List activity
+- [ ] 💯 Debug and fix Favorite Number activity
 
 The following STRETCH features are implemented:
 
-- [ ] Re-brand the app by modifying the UI
-- [ ] Modify the profile image by uploading a new image drawable
+- [ ] TODO
 
 The following EXTRA features are implemented:
 

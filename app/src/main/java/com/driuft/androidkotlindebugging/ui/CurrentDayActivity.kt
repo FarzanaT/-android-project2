@@ -16,10 +16,12 @@ class CurrentDayActivity : AppCompatActivity() {
         setContentView(R.layout.activity_current_day)
 
         currentDayText = findViewById(R.id.current_day_text)
-        currentDayText.text = getString(getDayOfMonth())
+        //currentDayText.text = getString(getDayOfMonth())
+        currentDayText.text = getDayOfMonth()
     }
 
-    private fun getDayOfMonth(): Int {
-        return cal.get(Calendar.DAY_OF_MONTH)
+    private fun getDayOfMonth(): String {
+        return cal.get(Calendar.DAY_OF_MONTH).toString()
     }
+
 }

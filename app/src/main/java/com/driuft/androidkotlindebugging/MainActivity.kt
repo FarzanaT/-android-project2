@@ -1,11 +1,13 @@
 package com.driuft.androidkotlindebugging
 
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.driuft.androidkotlindebugging.ui.*
+import java.text.SimpleDateFormat
+import java.util.*
+
 //import kotlinx.coroutines.flow.internal.NoOpContinuation.context
 //import kotlin.coroutines.coroutineContext
 //import kotlin.coroutines.jvm.internal.CompletedContinuation.context
@@ -32,9 +34,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun launchHelloWorldActivity() {
-       // val intent = Intent(context, HelloWorldActivity::class.java)
-
-        val i = Intent("404" as Context, HelloWorldActivity::class.java)
+        val i = Intent(this, HelloWorldActivity::class.java)
         startActivity(i)
     }
 
@@ -43,14 +43,26 @@ class MainActivity : AppCompatActivity() {
         startActivity(i)
     }
 
-    private fun launchCurrentDayActivity() {
+    private fun launchCurrentDayActivity(): String {
+        val formatter = SimpleDateFormat("dd")
+        val date = Date()
+
+       // val day : String = getDayOfMonth();
         val i = Intent(this, CurrentDayActivity::class.java)
         startActivity(i)
+        return formatter.format(date).toString()
     }
+
+//    private fun getDayOfMonth(): String {
+//
+//
+//    }
+
 
     private fun launchRandomColorActivity() {
         val i = Intent(this, RandomColorActivity::class.java)
         startActivity(i)
+       // getRandomColor();
     }
 
     private fun launchPrintListActivity() {
